@@ -87,7 +87,7 @@ function timer () {
     localStorage.setItem("score", score)
 }
 
-function reset (timerid) {
+function reset () {
     clearInterval(timerid)
     timer();
 }
@@ -96,6 +96,6 @@ timer();
 
 let playagain = document.getElementById("play-again-button")
 
-playagain.onlick = () => {
+playagain.onclick = () => {
     location.href = "./game.html"
 }
